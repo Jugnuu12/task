@@ -1,0 +1,70 @@
+<div class="w-100 d-flex">
+  <div class="left-side flex-column p-3">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Compose</button>
+    <div class="d-flex w-100 justify-content-between p-2">
+      <ul class="nav nav-tabs d-flex flex-column w-100 mt-4 border-0">
+        <li class="active">
+          <a data-toggle="tab" class="w-100 d-flex justify-content-between" href="#inbox">
+            <div class="text-dark"><span><i class="fa-regular fa-envelope pr-3"></i></span>
+              <span>Inbox</span>
+            </div>
+            <div class="count">3</div>
+          </a>
+        </li>
+        <li class="mt-2">
+          <a data-toggle="tab" href="#sent">
+            <div class="text-dark"><span><i class="fa-regular fa-envelope pr-3"></i></span>
+              <span>Sent</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="right-side">
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text"><i class="fas fa-search"></i></span>
+      </div>
+      <input type="text" class="form-control" placeholder="Search email">
+    </div>
+    <hr class="p-0 m-0">
+    <div class="tab-content">
+      <div id="inbox" class="tab-pane fade in active">
+        <h3>HOME</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua.</p>
+      </div>
+      <div id="sent" class="tab-pane fade">
+        <h3>Menu 1</h3>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New Message</h5>
+        <i class="fa fa-solid fa-x" data-dismiss="modal" aria-label="Close"></i>
+      </div>
+      <div class="modal-body">
+        <form action="mailto:recipient@example.com" method="post" enctype="text/plain">
+          <label for="subject">To:</label><br>
+          <input type="text" id="subject" name="subject" size="50">
+          <hr>
+          <label for="subject">Subject:</label><br>
+          <input type="text" id="subject" name="subject" size="50">
+          <hr>
+          <label for="body">Message:</label><br>
+          <textarea id="body" name="body" rows="10" cols="50"></textarea>
+          <hr>
+          <input type="submit" value="Send">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
